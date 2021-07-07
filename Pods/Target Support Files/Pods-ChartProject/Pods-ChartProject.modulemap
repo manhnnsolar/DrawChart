@@ -1,0 +1,6 @@
+framework module Pods_ChartProject {
+  umbrella header "Pods-ChartProject-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -3,19 +3,52 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26FE91F25E2372EFBCC93A4D /* Pods_ChartProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24A04803C9B62F3BA8D7C2B /* Pods_ChartProject.framework */; };
 		71D6EC50269544AF00609771 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC4F269544AF00609771 /* AppDelegate.swift */; };
 		71D6EC52269544AF00609771 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC51269544AF00609771 /* SceneDelegate.swift */; };
 		71D6EC54269544AF00609771 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC53269544AF00609771 /* ViewController.swift */; };
 		71D6EC57269544AF00609771 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D6EC55269544AF00609771 /* Main.storyboard */; };
 		71D6EC59269544B100609771 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D6EC58269544B100609771 /* Assets.xcassets */; };
 		71D6EC5C269544B100609771 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D6EC5A269544B100609771 /* LaunchScreen.storyboard */; };
+		71D6EC682695454300609771 /* ChartGuidelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC672695454300609771 /* ChartGuidelineView.swift */; };
+		71D6EC892695488700609771 /* AVMutableCompositionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC712695488700609771 /* AVMutableCompositionExtensions.swift */; };
+		71D6EC8A2695488700609771 /* BezierPathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC722695488700609771 /* BezierPathExtensions.swift */; };
+		71D6EC8B2695488700609771 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC732695488700609771 /* IntExtensions.swift */; };
+		71D6EC8C2695488700609771 /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC742695488700609771 /* NotificationName.swift */; };
+		71D6EC8D2695488700609771 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC752695488700609771 /* StringExtensions.swift */; };
+		71D6EC8E2695488700609771 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC762695488700609771 /* UIImageExtensions.swift */; };
+		71D6EC8F2695488700609771 /* AVAudioFileExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC772695488700609771 /* AVAudioFileExtensions.swift */; };
+		71D6EC902695488700609771 /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC782695488700609771 /* FileManagerExtensions.swift */; };
+		71D6EC912695488700609771 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC792695488700609771 /* FontExtensions.swift */; };
+		71D6EC922695488700609771 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC7A2695488700609771 /* DictionaryExtension.swift */; };
+		71D6EC932695488700609771 /* CalendarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC7B2695488700609771 /* CalendarExtensions.swift */; };
+		71D6EC942695488700609771 /* FloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC7C2695488700609771 /* FloatExtensions.swift */; };
+		71D6EC952695488700609771 /* String+Mime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC7D2695488700609771 /* String+Mime.swift */; };
+		71D6EC962695488700609771 /* CollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC7E2695488700609771 /* CollectionViewExtensions.swift */; };
+		71D6EC972695488700609771 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC7F2695488700609771 /* ArrayExtensions.swift */; };
+		71D6EC982695488700609771 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC802695488700609771 /* DateExtensions.swift */; };
+		71D6EC992695488700609771 /* TimeIntervalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC812695488700609771 /* TimeIntervalExtensions.swift */; };
+		71D6EC9A2695488700609771 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC822695488700609771 /* ColorExtensions.swift */; };
+		71D6EC9B2695488700609771 /* CIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC832695488700609771 /* CIImageExtensions.swift */; };
+		71D6EC9C2695488700609771 /* PHAssetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC842695488700609771 /* PHAssetExtension.swift */; };
+		71D6EC9D2695488700609771 /* TableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC852695488700609771 /* TableViewExtensions.swift */; };
+		71D6EC9E2695488700609771 /* AVAssetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC862695488700609771 /* AVAssetExtension.swift */; };
+		71D6EC9F2695488700609771 /* CLPlacemarkExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC872695488700609771 /* CLPlacemarkExtensions.swift */; };
+		71D6ECA02695488700609771 /* AVAudioPlayerNodeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6EC882695488700609771 /* AVAudioPlayerNodeExtensions.swift */; };
+		71D6ECA326954BC000609771 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6ECA226954BC000609771 /* ChartView.swift */; };
+		71D6ECA626954C5000609771 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6ECA526954C5000609771 /* UIViewExtension.swift */; };
+		71D6ECAE26955AEA00609771 /* ChartGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6ECAD26955AEA00609771 /* ChartGraphView.swift */; };
+		71D6ECB126955AFC00609771 /* ChartGraphView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71D6ECB026955AFC00609771 /* ChartGraphView.xib */; };
+		71D6ECB726955BEB00609771 /* ChartGraphViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6ECB526955BEB00609771 /* ChartGraphViewCell.swift */; };
+		71D6ECB826955BEB00609771 /* ChartGraphViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71D6ECB626955BEB00609771 /* ChartGraphViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4201684EAF2CA759E3BEA089 /* Pods-ChartProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartProject.release.xcconfig"; path = "Target Support Files/Pods-ChartProject/Pods-ChartProject.release.xcconfig"; sourceTree = "<group>"; };
 		71D6EC4C269544AF00609771 /* ChartProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D6EC4F269544AF00609771 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71D6EC51269544AF00609771 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +57,39 @@
 		71D6EC58269544B100609771 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71D6EC5B269544B100609771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71D6EC5D269544B100609771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71D6EC672695454300609771 /* ChartGuidelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartGuidelineView.swift; sourceTree = "<group>"; };
+		71D6EC712695488700609771 /* AVMutableCompositionExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVMutableCompositionExtensions.swift; sourceTree = "<group>"; };
+		71D6EC722695488700609771 /* BezierPathExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BezierPathExtensions.swift; sourceTree = "<group>"; };
+		71D6EC732695488700609771 /* IntExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
+		71D6EC742695488700609771 /* NotificationName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
+		71D6EC752695488700609771 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		71D6EC762695488700609771 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		71D6EC772695488700609771 /* AVAudioFileExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAudioFileExtensions.swift; sourceTree = "<group>"; };
+		71D6EC782695488700609771 /* FileManagerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManagerExtensions.swift; sourceTree = "<group>"; };
+		71D6EC792695488700609771 /* FontExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
+		71D6EC7A2695488700609771 /* DictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		71D6EC7B2695488700609771 /* CalendarExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarExtensions.swift; sourceTree = "<group>"; };
+		71D6EC7C2695488700609771 /* FloatExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatExtensions.swift; sourceTree = "<group>"; };
+		71D6EC7D2695488700609771 /* String+Mime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Mime.swift"; sourceTree = "<group>"; };
+		71D6EC7E2695488700609771 /* CollectionViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewExtensions.swift; sourceTree = "<group>"; };
+		71D6EC7F2695488700609771 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		71D6EC802695488700609771 /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		71D6EC812695488700609771 /* TimeIntervalExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtensions.swift; sourceTree = "<group>"; };
+		71D6EC822695488700609771 /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		71D6EC832695488700609771 /* CIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CIImageExtensions.swift; sourceTree = "<group>"; };
+		71D6EC842695488700609771 /* PHAssetExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHAssetExtension.swift; sourceTree = "<group>"; };
+		71D6EC852695488700609771 /* TableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewExtensions.swift; sourceTree = "<group>"; };
+		71D6EC862695488700609771 /* AVAssetExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAssetExtension.swift; sourceTree = "<group>"; };
+		71D6EC872695488700609771 /* CLPlacemarkExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLPlacemarkExtensions.swift; sourceTree = "<group>"; };
+		71D6EC882695488700609771 /* AVAudioPlayerNodeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAudioPlayerNodeExtensions.swift; sourceTree = "<group>"; };
+		71D6ECA226954BC000609771 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		71D6ECA526954C5000609771 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		71D6ECAD26955AEA00609771 /* ChartGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartGraphView.swift; sourceTree = "<group>"; };
+		71D6ECB026955AFC00609771 /* ChartGraphView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartGraphView.xib; sourceTree = "<group>"; };
+		71D6ECB526955BEB00609771 /* ChartGraphViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartGraphViewCell.swift; sourceTree = "<group>"; };
+		71D6ECB626955BEB00609771 /* ChartGraphViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartGraphViewCell.xib; sourceTree = "<group>"; };
+		99CBAECD3925CF9EA612F6FF /* Pods-ChartProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartProject.debug.xcconfig"; path = "Target Support Files/Pods-ChartProject/Pods-ChartProject.debug.xcconfig"; sourceTree = "<group>"; };
+		F24A04803C9B62F3BA8D7C2B /* Pods_ChartProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26FE91F25E2372EFBCC93A4D /* Pods_ChartProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +109,8 @@
 			children = (
 				71D6EC4E269544AF00609771 /* ChartProject */,
 				71D6EC4D269544AF00609771 /* Products */,
+				EE0B76A4C2397C92499ED786 /* Pods */,
+				AE2D492AE6F0BDC7F7A7842E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +128,92 @@
 				71D6EC4F269544AF00609771 /* AppDelegate.swift */,
 				71D6EC51269544AF00609771 /* SceneDelegate.swift */,
 				71D6EC53269544AF00609771 /* ViewController.swift */,
+				71D6EC66269544CE00609771 /* Chart */,
+				71D6EC702695484F00609771 /* Extension */,
 				71D6EC55269544AF00609771 /* Main.storyboard */,
 				71D6EC58269544B100609771 /* Assets.xcassets */,
 				71D6EC5A269544B100609771 /* LaunchScreen.storyboard */,
 				71D6EC5D269544B100609771 /* Info.plist */,
 			);
 			path = ChartProject;
+			sourceTree = "<group>";
+		};
+		71D6EC66269544CE00609771 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				71D6EC672695454300609771 /* ChartGuidelineView.swift */,
+				71D6ECA226954BC000609771 /* ChartView.swift */,
+				71D6ECB326955BC500609771 /* ChartGraphView */,
+				71D6ECB426955BCF00609771 /* ChartGraphViewCell */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		71D6EC702695484F00609771 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				71D6EC7F2695488700609771 /* ArrayExtensions.swift */,
+				71D6EC862695488700609771 /* AVAssetExtension.swift */,
+				71D6EC772695488700609771 /* AVAudioFileExtensions.swift */,
+				71D6EC882695488700609771 /* AVAudioPlayerNodeExtensions.swift */,
+				71D6EC712695488700609771 /* AVMutableCompositionExtensions.swift */,
+				71D6EC722695488700609771 /* BezierPathExtensions.swift */,
+				71D6EC7B2695488700609771 /* CalendarExtensions.swift */,
+				71D6EC832695488700609771 /* CIImageExtensions.swift */,
+				71D6EC872695488700609771 /* CLPlacemarkExtensions.swift */,
+				71D6EC7E2695488700609771 /* CollectionViewExtensions.swift */,
+				71D6EC822695488700609771 /* ColorExtensions.swift */,
+				71D6EC802695488700609771 /* DateExtensions.swift */,
+				71D6EC7A2695488700609771 /* DictionaryExtension.swift */,
+				71D6EC782695488700609771 /* FileManagerExtensions.swift */,
+				71D6EC7C2695488700609771 /* FloatExtensions.swift */,
+				71D6EC792695488700609771 /* FontExtensions.swift */,
+				71D6EC732695488700609771 /* IntExtensions.swift */,
+				71D6EC742695488700609771 /* NotificationName.swift */,
+				71D6EC842695488700609771 /* PHAssetExtension.swift */,
+				71D6EC7D2695488700609771 /* String+Mime.swift */,
+				71D6EC752695488700609771 /* StringExtensions.swift */,
+				71D6EC852695488700609771 /* TableViewExtensions.swift */,
+				71D6EC812695488700609771 /* TimeIntervalExtensions.swift */,
+				71D6EC762695488700609771 /* UIImageExtensions.swift */,
+				71D6ECA526954C5000609771 /* UIViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		71D6ECB326955BC500609771 /* ChartGraphView */ = {
+			isa = PBXGroup;
+			children = (
+				71D6ECAD26955AEA00609771 /* ChartGraphView.swift */,
+				71D6ECB026955AFC00609771 /* ChartGraphView.xib */,
+			);
+			path = ChartGraphView;
+			sourceTree = "<group>";
+		};
+		71D6ECB426955BCF00609771 /* ChartGraphViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				71D6ECB526955BEB00609771 /* ChartGraphViewCell.swift */,
+				71D6ECB626955BEB00609771 /* ChartGraphViewCell.xib */,
+			);
+			path = ChartGraphViewCell;
+			sourceTree = "<group>";
+		};
+		AE2D492AE6F0BDC7F7A7842E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F24A04803C9B62F3BA8D7C2B /* Pods_ChartProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE0B76A4C2397C92499ED786 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99CBAECD3925CF9EA612F6FF /* Pods-ChartProject.debug.xcconfig */,
+				4201684EAF2CA759E3BEA089 /* Pods-ChartProject.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71D6EC60269544B100609771 /* Build configuration list for PBXNativeTarget "ChartProject" */;
 			buildPhases = (
+				A1DA3F2DECC3D1832A65C3C6 /* [CP] Check Pods Manifest.lock */,
 				71D6EC48269544AF00609771 /* Sources */,
 				71D6EC49269544AF00609771 /* Frameworks */,
 				71D6EC4A269544AF00609771 /* Resources */,
+				7DCC472216F8403D44A3375F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,20 +277,93 @@
 			files = (
 				71D6EC5C269544B100609771 /* LaunchScreen.storyboard in Resources */,
 				71D6EC59269544B100609771 /* Assets.xcassets in Resources */,
+				71D6ECB126955AFC00609771 /* ChartGraphView.xib in Resources */,
 				71D6EC57269544AF00609771 /* Main.storyboard in Resources */,
+				71D6ECB826955BEB00609771 /* ChartGraphViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7DCC472216F8403D44A3375F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChartProject/Pods-ChartProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChartProject/Pods-ChartProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChartProject/Pods-ChartProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1DA3F2DECC3D1832A65C3C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChartProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		71D6EC48269544AF00609771 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71D6ECA626954C5000609771 /* UIViewExtension.swift in Sources */,
+				71D6EC8B2695488700609771 /* IntExtensions.swift in Sources */,
+				71D6EC982695488700609771 /* DateExtensions.swift in Sources */,
+				71D6EC8C2695488700609771 /* NotificationName.swift in Sources */,
+				71D6EC972695488700609771 /* ArrayExtensions.swift in Sources */,
+				71D6EC9F2695488700609771 /* CLPlacemarkExtensions.swift in Sources */,
 				71D6EC54269544AF00609771 /* ViewController.swift in Sources */,
+				71D6ECAE26955AEA00609771 /* ChartGraphView.swift in Sources */,
+				71D6ECA326954BC000609771 /* ChartView.swift in Sources */,
+				71D6EC8D2695488700609771 /* StringExtensions.swift in Sources */,
 				71D6EC50269544AF00609771 /* AppDelegate.swift in Sources */,
+				71D6EC9B2695488700609771 /* CIImageExtensions.swift in Sources */,
+				71D6EC922695488700609771 /* DictionaryExtension.swift in Sources */,
+				71D6EC962695488700609771 /* CollectionViewExtensions.swift in Sources */,
+				71D6EC942695488700609771 /* FloatExtensions.swift in Sources */,
+				71D6EC952695488700609771 /* String+Mime.swift in Sources */,
+				71D6EC9A2695488700609771 /* ColorExtensions.swift in Sources */,
+				71D6EC902695488700609771 /* FileManagerExtensions.swift in Sources */,
+				71D6ECB726955BEB00609771 /* ChartGraphViewCell.swift in Sources */,
+				71D6EC682695454300609771 /* ChartGuidelineView.swift in Sources */,
+				71D6EC992695488700609771 /* TimeIntervalExtensions.swift in Sources */,
+				71D6EC912695488700609771 /* FontExtensions.swift in Sources */,
+				71D6EC8A2695488700609771 /* BezierPathExtensions.swift in Sources */,
+				71D6EC932695488700609771 /* CalendarExtensions.swift in Sources */,
+				71D6ECA02695488700609771 /* AVAudioPlayerNodeExtensions.swift in Sources */,
+				71D6EC8F2695488700609771 /* AVAudioFileExtensions.swift in Sources */,
+				71D6EC8E2695488700609771 /* UIImageExtensions.swift in Sources */,
+				71D6EC9E2695488700609771 /* AVAssetExtension.swift in Sources */,
+				71D6EC9D2695488700609771 /* TableViewExtensions.swift in Sources */,
 				71D6EC52269544AF00609771 /* SceneDelegate.swift in Sources */,
+				71D6EC9C2695488700609771 /* PHAssetExtension.swift in Sources */,
+				71D6EC892695488700609771 /* AVMutableCompositionExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,37 +507,47 @@
 		};
 		71D6EC61269544B100609771 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99CBAECD3925CF9EA612F6FF /* Pods-ChartProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = G388ZAYJYX;
 				INFOPLIST_FILE = ChartProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.solar.ChartProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Solar_iOS App Development";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		71D6EC62269544B100609771 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4201684EAF2CA759E3BEA089 /* Pods-ChartProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = G388ZAYJYX;
 				INFOPLIST_FILE = ChartProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.solar.ChartProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Solar_iOS App Development";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
