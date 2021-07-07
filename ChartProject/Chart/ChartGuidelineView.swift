@@ -20,6 +20,7 @@ class ChartGuidelineView: UIView {
         for levelIndex in 0..<levels.count {
             let baseLineY = Const.contentInset.top + CGFloat(levelIndex) * contentSize.height/CGFloat(levels.count - 1)
             
+            // MARK: - text left
             let guideTextHeight: CGFloat = 16
             let theoryTextSize = CGSize(width: Const.leftColumnContentSize, height: guideTextHeight)
             let text = "\(levels[levelIndex])"
@@ -34,7 +35,16 @@ class ChartGuidelineView: UIView {
                                   height: textSize.height)
             att.draw(in: textRect)
             
-            // Draw line
+            // MARK: - right text
+            let textSize2 = att.boundingRect(with: theoryTextSize, options: [], context: nil).size
+            
+            let textRect2 = CGRect(x: self.frame.width - theoryTextSize.width + 10,
+                                  y: baseLineY - guideTextHeight + (theoryTextSize.height - textSize.height / 2),
+                                  width: textSize.width,
+                                  height: textSize.height)
+            att.draw(in: textRect2)
+            
+            // MARK: - Draw line
             let path = UIBezierPath()
 //            if levels[levelIndex] != 0 {
                 path.setLineDash([3,3], count: 2, phase: 0)
@@ -42,7 +52,7 @@ class ChartGuidelineView: UIView {
             
             path.lineWidth = 0.5
             path.move(to: CGPoint(x: theoryTextSize.width, y: baseLineY))
-            path.addLine(to: CGPoint(x: contentSize.width - 17, y: baseLineY))
+            path.addLine(to: CGPoint(x: contentSize.width - Const.leftColumnContentSize, y: baseLineY))
             UIColor(rgb: 0x6C6C6C).setStroke()
             path.stroke()
         }

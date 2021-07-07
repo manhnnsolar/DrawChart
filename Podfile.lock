@@ -2,7 +2,7 @@ PODS:
   - Charts (3.6.0):
     - Charts/Core (= 3.6.0)
   - Charts/Core (3.6.0)
-  - RxSwift (6.2.0)
+  - RxSwift (6.1.0)
   - SwiftyAttributes (5.1.1)
 
 DEPENDENCIES:
@@ -18,7 +18,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
-  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
   SwiftyAttributes: e3e13891ddac3c62b3d7798d5c3969cea88e62bb
 
 PODFILE CHECKSUM: 587a89938a226b01629cad7db220b8c7e1540f7b

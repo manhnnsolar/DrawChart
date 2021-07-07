@@ -6,7 +6,7 @@
 //  Copyright © 2015 Krunoslav Zaher. All rights reserved.
 //
 
-protocol LockOwnerType: AnyObject, Lock {
+protocol LockOwnerType: class, Lock {
     var lock: RecursiveLock { get }
 }
 
