@@ -45,6 +45,7 @@
 		71D6ECB126955AFC00609771 /* ChartGraphView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71D6ECB026955AFC00609771 /* ChartGraphView.xib */; };
 		71D6ECB726955BEB00609771 /* ChartGraphViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6ECB526955BEB00609771 /* ChartGraphViewCell.swift */; };
 		71D6ECB826955BEB00609771 /* ChartGraphViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71D6ECB626955BEB00609771 /* ChartGraphViewCell.xib */; };
+		71D6ECBC2695A6EF00609771 /* ChartGraphPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6ECBB2695A6EF00609771 /* ChartGraphPointView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		71D6ECB026955AFC00609771 /* ChartGraphView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartGraphView.xib; sourceTree = "<group>"; };
 		71D6ECB526955BEB00609771 /* ChartGraphViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartGraphViewCell.swift; sourceTree = "<group>"; };
 		71D6ECB626955BEB00609771 /* ChartGraphViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartGraphViewCell.xib; sourceTree = "<group>"; };
+		71D6ECBB2695A6EF00609771 /* ChartGraphPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartGraphPointView.swift; sourceTree = "<group>"; };
 		99CBAECD3925CF9EA612F6FF /* Pods-ChartProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartProject.debug.xcconfig"; path = "Target Support Files/Pods-ChartProject/Pods-ChartProject.debug.xcconfig"; sourceTree = "<group>"; };
 		F24A04803C9B62F3BA8D7C2B /* Pods_ChartProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -141,8 +143,9 @@
 		71D6EC66269544CE00609771 /* Chart */ = {
 			isa = PBXGroup;
 			children = (
-				71D6EC672695454300609771 /* ChartGuidelineView.swift */,
 				71D6ECA226954BC000609771 /* ChartView.swift */,
+				71D6EC672695454300609771 /* ChartGuidelineView.swift */,
+				71D6ECBB2695A6EF00609771 /* ChartGraphPointView.swift */,
 				71D6ECB326955BC500609771 /* ChartGraphView */,
 				71D6ECB426955BCF00609771 /* ChartGraphViewCell */,
 			);
@@ -339,6 +342,7 @@
 				71D6EC972695488700609771 /* ArrayExtensions.swift in Sources */,
 				71D6EC9F2695488700609771 /* CLPlacemarkExtensions.swift in Sources */,
 				71D6EC54269544AF00609771 /* ViewController.swift in Sources */,
+				71D6ECBC2695A6EF00609771 /* ChartGraphPointView.swift in Sources */,
 				71D6ECAE26955AEA00609771 /* ChartGraphView.swift in Sources */,
 				71D6ECA326954BC000609771 /* ChartView.swift in Sources */,
 				71D6EC8D2695488700609771 /* StringExtensions.swift in Sources */,

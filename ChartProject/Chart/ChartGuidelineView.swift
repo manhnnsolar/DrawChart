@@ -9,7 +9,7 @@ import UIKit
 
 private struct Const {
     static let leftColumnContentSize: CGFloat = 43
-    static let contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 25, right: 0)
+    static let contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
 }
 
 class ChartGuidelineView: UIView {
@@ -28,17 +28,17 @@ class ChartGuidelineView: UIView {
             let att = NSMutableAttributedString(string: text)
             let textSize = att.boundingRect(with: theoryTextSize, options: [], context: nil).size
             
-            let textRect = CGRect(x: theoryTextSize.width - textSize.width,
-                                  y: baseLineY - guideTextHeight + (theoryTextSize.height - textSize.height),
+            let textRect = CGRect(x: theoryTextSize.width - textSize.width - 10,
+                                  y: baseLineY - guideTextHeight + (theoryTextSize.height - textSize.height / 2),
                                   width: textSize.width,
                                   height: textSize.height)
             att.draw(in: textRect)
             
             // Draw line
             let path = UIBezierPath()
-            if levels[levelIndex] != 0 {
+//            if levels[levelIndex] != 0 {
                 path.setLineDash([3,3], count: 2, phase: 0)
-            }
+//            }
             
             path.lineWidth = 0.5
             path.move(to: CGPoint(x: theoryTextSize.width, y: baseLineY))

@@ -27,7 +27,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yn-LH-58U">
                         <rect key="frame" x="7" y="183" width="11.5" height="12"/>
                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -47,7 +47,7 @@
                 <outlet property="heightConstraint" destination="YyY-ox-Gfb" id="qTA-g7-KNu"/>
                 <outlet property="valueLabel" destination="5yn-LH-58U" id="RWE-i7-PaE"/>
             </connections>
-            <point key="canvasLocation" x="47.826086956521742" y="107.47767857142857"/>
+            <point key="canvasLocation" x="47.10144927536232" y="107.14285714285714"/>
         </collectionViewCell>
     </objects>
 </document>

@@ -10,7 +10,7 @@ import UIKit
 class ChartGraphView: UIView {
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var data = [10, 78, 98, 30, 2, 20, 50, 45, 71, 140, 100, 10, 5, 60, 50, 110, 120]
+    var data = [140, 12, 90, 80, 67, 40, 100]
     
     func configCollectionView() {
         collectionView.registerCell(type: ChartGraphViewCell.self)
@@ -41,14 +41,14 @@ extension ChartGraphView: UICollectionViewDataSource {
 
 extension ChartGraphView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.frame.width / 15, height: self.frame.height)
+        return CGSize(width: (collectionView.frame.width - 6 * 5) / 7, height: collectionView.frame.height)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 5
+        return 0
     }
 }

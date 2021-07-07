@@ -10,6 +10,8 @@ import UIKit
 class ChartView: UIView {
     
     var guideline: ChartGuidelineView!
+    var chartGraphView: ChartGraphView!
+    var chartGraphPointView: ChartGraphPointView!
     var contentView: UIView!
     
     override func layoutSubviews() {
@@ -18,32 +20,41 @@ class ChartView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         configViews()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        
         configViews()
     }
     
     private func configViews() {
         initGuideLine()
         initContentView()
+        initChartGraphView()
+        initChartGraphPointView()
+    }
+    
+    private func initChartGraphView() {
+        self.chartGraphView = Bundle.main.loadNibNamed("ChartGraphView", owner: self, options: nil)?.first as? ChartGraphView
+        self.chartGraphView.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(chartGraphView)
+        self.chartGraphView.fitSuperviewConstraint()
+        self.chartGraphView.configCollectionView()
+    }
+    
+    private func initChartGraphPointView() {
+        self.chartGraphPointView = ChartGraphPointView()
+        self.chartGraphPointView.backgroundColor = .clear
+        self.chartGraphPointView.isUserInteractionEnabled = false
+        self.addSubview(self.chartGraphPointView)
+        self.chartGraphPointView.fitSuperviewConstraint()
     }
     
     private func initContentView() {
         self.contentView = UIView()
         self.contentView.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(self.contentView)
-        
-//        NSLayoutConstraint.activate([
-//            self.scrollView.leadingAnchor.constraint(equalTo: self.graph.leadingAnchor),
-//            self.scrollView.trailingAnchor.constraint(equalTo: self.graph.trailingAnchor, constant: -ChartGraphView.Const.insetRight),
-//            self.scrollView.topAnchor.constraint(equalTo: self.graph.topAnchor),
-//            self.scrollView.bottomAnchor.constraint(equalTo: self.graph.bottomAnchor)
-//        ])
     }
     
     private func initGuideLine() {
