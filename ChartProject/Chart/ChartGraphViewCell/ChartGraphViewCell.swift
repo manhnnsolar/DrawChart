@@ -19,7 +19,7 @@ class ChartGraphViewCell: UICollectionViewCell {
     }
     
     func configUI(height: CGFloat) {
-        heightConstraint.constant = height / 140 * self.frame.height
+        heightConstraint.constant = height / 140 * self.frame.height * (7 / 8)
         valueLabel.text = "\(Int(height))"
     }
 

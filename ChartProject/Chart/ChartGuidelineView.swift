@@ -14,7 +14,7 @@ private struct Const {
 
 class ChartGuidelineView: UIView {
     override func draw(_ rect: CGRect) {
-        let levels = [140, 120, 100, 80, 60, 40, 20, 0]
+        let levels = ["sec", 140, 120, 100, 80, 60, 40, 20, 0] as [Any]
         let contentSize = rect.inset(by: Const.contentInset)
         
         for levelIndex in 0..<levels.count {
@@ -30,32 +30,48 @@ class ChartGuidelineView: UIView {
             let textSize = att.boundingRect(with: theoryTextSize, options: [], context: nil).size
             
             let textRect = CGRect(x: theoryTextSize.width - textSize.width - 10,
-                                  y: baseLineY - guideTextHeight + (theoryTextSize.height - textSize.height / 2),
+                                  y: baseLineY - guideTextHeight + (theoryTextSize.height - textSize.height),
                                   width: textSize.width,
                                   height: textSize.height)
             att.draw(in: textRect)
             
             // MARK: - right text
-            let textSize2 = att.boundingRect(with: theoryTextSize, options: [], context: nil).size
-            
             let textRect2 = CGRect(x: self.frame.width - theoryTextSize.width + 10,
-                                  y: baseLineY - guideTextHeight + (theoryTextSize.height - textSize.height / 2),
+                                  y: baseLineY - guideTextHeight + (theoryTextSize.height - textSize.height),
                                   width: textSize.width,
                                   height: textSize.height)
             att.draw(in: textRect2)
             
             // MARK: - Draw line
-            let path = UIBezierPath()
-//            if levels[levelIndex] != 0 {
-                path.setLineDash([3,3], count: 2, phase: 0)
-//            }
-            
-            path.lineWidth = 0.5
-            path.move(to: CGPoint(x: theoryTextSize.width, y: baseLineY))
-            path.addLine(to: CGPoint(x: contentSize.width - Const.leftColumnContentSize, y: baseLineY))
-            UIColor(rgb: 0x6C6C6C).setStroke()
-            path.stroke()
+            if levelIndex == 0 || levelIndex == levels.count - 1 {
+                let path = UIBezierPath()
+                path.setLineDash([2, 2], count: 2, phase: 0)
+                
+                path.lineWidth = 0.5
+                path.move(to: CGPoint(x: 0, y: baseLineY))
+                path.addLine(to: CGPoint(x: contentSize.width, y: baseLineY))
+                UIColor(rgb: 0x8B8B8B).setStroke()
+                path.stroke()
+            }
         }
+        
+        // MARK: - Draw column left
+        let guideTextHeight: CGFloat = 16
+        let theoryTextSize = CGSize(width: Const.leftColumnContentSize, height: guideTextHeight)
+        let baseLineY = Const.contentInset.top
+        let path = UIBezierPath()
+        path.setLineDash([2, 2], count: 2, phase: 0)
+        path.lineWidth = 0.5
+        path.move(to: CGPoint(x: theoryTextSize.width, y: baseLineY))
+        path.addLine(to: CGPoint(x: theoryTextSize.width, y: baseLineY + CGFloat(levels.count - 1) * contentSize.height/CGFloat(levels.count - 1)))
+        UIColor(rgb: 0x8B8B8B).setStroke()
+        path.stroke()
+        
+        // MARK: - Draw column right
+        path.move(to: CGPoint(x: contentSize.width - theoryTextSize.width, y: baseLineY))
+        path.addLine(to: CGPoint(x: contentSize.width - theoryTextSize.width, y: baseLineY + CGFloat(levels.count - 1) * contentSize.height/CGFloat(levels.count - 1)))
+        UIColor(rgb: 0x8B8B8B).setStroke()
+        path.stroke()
     }
 }
 

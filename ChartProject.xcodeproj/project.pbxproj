@@ -112,8 +112,14 @@
 				C477484C7231AFC8D5ACA133 /* Pods-ChartProject.debug.xcconfig */,
 				7D5F5DF79F46520036893221 /* Pods-ChartProject.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		253666D5269ACD1000B0752F /* ChartDetailInformation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChartDetailInformation;
 			sourceTree = "<group>";
 		};
 		71D6EC43269544AF00609771 = {
@@ -158,6 +164,7 @@
 				71D6ECBB2695A6EF00609771 /* ChartGraphPointView.swift */,
 				71D6ECB326955BC500609771 /* ChartGraphView */,
 				71D6ECB426955BCF00609771 /* ChartGraphViewCell */,
+				253666D5269ACD1000B0752F /* ChartDetailInformation */,
 			);
 			path = Chart;
 			sourceTree = "<group>";

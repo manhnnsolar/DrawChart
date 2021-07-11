@@ -25,7 +25,7 @@ class ChartGraphPointView: UIView {
         // MARK: - Draw point
         for levelIndex in 0..<levels.count {
             let x = 53 + -3.5 + leftInset + widthInit * CGFloat(levelIndex)
-            let y = heightInit - contentSize.height * CGFloat(levels[levelIndex]) / 140.0
+            let y = heightInit - contentSize.height * CGFloat(levels[levelIndex]) / 140.0 * (7 / 8)
             let path = UIBezierPath(ovalIn: CGRect(x: x, y: y, width: 7, height: 7))
             listPoint.append(CGPoint(x: x, y: y))
             
